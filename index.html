@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mindclick · RFP Answers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#003E32; --mid:#006F62; --sage:#63A09A; --pale:#A5DFD3; --linen:#F9F2EC;
+    --coral:#FF8674; --ink:#1c2622; --muted:#6a7772; --line:#e2ddd4; --card:#fffdfa;
+    color-scheme: light;
+    box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-padding-top:env(safe-area-inset-top,0px)}
+  body{margin:0;background:var(--linen);color:var(--ink);
+    font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;}
+  .page{max-width:1000px;margin:0 auto;padding:0 16px;}
+  section{padding-block:34px;}
+  .sectkick{display:inline-block;background:#eef4f1;color:var(--mid);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:999px;margin:0 0 12px;}
+  h2.sec{font-size:24px;color:var(--green);font-weight:800;margin:0 0 6px;letter-spacing:-.01em;}
+  .lede{font-size:15px;color:#374151;margin:0 0 6px;max-width:72ch;} .lede b{color:var(--green);}
+  h3.grp{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:30px 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:700;}
+  .count{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:700;color:var(--green);font-size:14px;margin:14px 0 22px;}
+  .count b{color:var(--coral);font-size:18px;}
+  .qa{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px;display:flex;gap:14px;}
+  .chk{width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+  .chk svg{width:15px;height:15px;}
+  .qtext{font-size:14px;font-weight:700;color:var(--green);margin:0 0 5px;}
+  .atext{font-size:13.5px;color:#33404f;margin:0 0 10px;} .atext b{color:var(--green);font-weight:700;}
+  .src{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:#eef4f1;color:var(--mid);}
+  .foot{margin-top:24px;font-size:12.5px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:14px 16px;} .foot b{color:var(--green);}
+  .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(249,242,236,.94);backdrop-filter:saturate(1.1) blur(8px);border-bottom:1px solid var(--line);}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:rgba(249,242,236,.94);backdrop-filter:saturate(1.1) blur(8px);}
+  .navin{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:11px 16px;flex-wrap:wrap;}
+  .brandmark{display:inline-flex;align-items:center;line-height:0;}
+  .mclogo{height:42px;width:auto;display:block;margin:-6px 0;}
+  .navlabel{font-size:12.5px;color:var(--muted);font-weight:600;}
+  .hero{padding-block:34px 26px;border-bottom:1px solid var(--line);}
+  .eyebrow{color:var(--mid);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px;}
+  h1{font-size:clamp(28px,5vw,40px);line-height:1.05;margin:0 0 10px;color:var(--green);font-weight:800;letter-spacing:-.015em;text-wrap:balance;}
+  .herosub{font-size:16px;color:#3a473f;max-width:60ch;margin:0;}
+  .closer{padding-block:30px;text-align:center;border-top:1px solid var(--line);margin-top:10px;}
+  .closer .tl{color:var(--green);font-weight:800;font-size:20px;letter-spacing:-.01em;}
+  .closer .mk{display:flex;justify-content:center;margin-top:10px;}
+  .mclogo-foot{height:64px;margin:0;}
+  .stamp{margin-top:14px;font-size:11.5px;color:var(--muted);letter-spacing:.02em;}
+</style></head>
+<body>
+<div class="nav"><div class="navin">
+  <a class="brandmark" href="#top" aria-label="Mindclick, back to top"><svg class="mclogo" viewBox="0 0 626.93 246.12" role="img" aria-label="Mindclick"><title>Mindclick</title><path fill="#003e32" d="M619.54,135.74c2.07,2.07,3.1,4.56,3.1,7.49s-1.060,5.54-3.18,7.6c-2.06,1.99-4.53,2.99-7.41,2.99s-5.49-1.02-7.53-3.06c-2.04-2.04-3.06-4.55-3.06-7.53s1.1-5.67,3.3-7.72c2.07-1.92,4.5-2.870,7.28-2.87s5.42,1.03,7.49,3.1ZM612.05,134.44c-2.43,0-4.51.88-6.22,2.64-1.69,1.72-2.53,3.77-2.53,6.14s.86,4.54,2.57,6.25c1.7,1.71,3.76,2.57,6.18,2.57s4.46-.86,6.16-2.59c1.7-1.73,2.56-3.81,2.56-6.24s-.85-4.4-2.54-6.14c-1.71-1.76-3.77-2.64-6.18-2.64ZM610.49,144.96v4.15h-3.07v-11.74c.73,0,1.82,0,3.27,0,1.45,0,2.26.01,2.42.02.93.07,1.7.27,2.31.6,1.04.57,1.57,1.51,1.57,2.8,0,.99-.28,1.7-.83,2.14-.55.44-1.23.7-2.03.79.74.15,1.29.38,1.67.68.69.56,1.03,1.43,1.03,2.63v1.05c0,.12,0,.23.02.34.01.11.04.23.08.34l.1.33h-2.93c-.1-.37-.16-.91-.19-1.62s-.09-1.19-.19-1.44c-.15-.41-.44-.7-.86-.86-.23-.1-.58-.16-1.05-.19l-.68-.04h-.65ZM611.68,142.85c.72,0,1.28-.14,1.68-.43.4-.29.6-.75.6-1.39s-.32-1.09-.95-1.34c-.42-.16-1.02-.24-1.78-.24h-.75v3.41h1.19Z"/><path fill="#003e32" d="M30.08,88.11h18.04v9.92c3.61-7.21,10.43-11.21,18.68-11.21,8.89,0,15.72,4.51,18.94,12.24,4.25-7.86,11.21-12.24,20.23-12.24,6.06,0,11.34,2.19,14.94,6.18,3.61,3.99,6.06,9.79,6.06,18.55v40.97h-18.68v-37.36c0-4.77-1.03-7.86-2.7-9.53-1.68-1.93-3.86-2.71-6.7-2.71-6.96,0-11.08,5.41-11.08,14.94v34.66h-18.68v-37.36c0-4.77-.9-7.86-2.58-9.53-1.68-1.93-3.99-2.71-6.83-2.71-6.96,0-10.95,5.41-10.95,14.94v34.66h-18.68v-64.42Z"/><rect fill="#003e32" x="139.07" y="88.11" width="18.68" height="64.42"/><path fill="#003e32" d="M170.51,88.11h18.04v9.79c3.74-6.83,10.56-11.08,19.58-11.08,6.7,0,12.37,2.45,16.36,6.7,3.99,4.25,6.31,10.31,6.31,19.32v39.68h-18.68v-36.85c0-4.25-1.03-7.6-2.96-9.66-1.93-2.19-4.51-3.09-7.73-3.09-7.6,0-12.24,5.8-12.24,14.94v34.66h-18.68v-64.42Z"/><path fill="#003e32" d="M321.23,120.32c0-19.45,13.91-33.5,33.5-33.5,15.72,0,28.86,9.02,31.82,24.35l-19.2,1.93c-.9-7.09-6.18-11.59-12.63-11.59-8.63,0-14.17,7.6-14.17,18.81s5.54,18.81,14.17,18.81c6.31,0,11.72-4.51,12.63-11.98l19.2,1.93c-3.35,15.85-16.49,24.74-31.82,24.74-19.45,0-33.5-14.04-33.5-33.5Z"/><path fill="#003e32" d="M397.47,67.02h18.68v85.5h-18.68v-85.5Z"/><rect fill="#003e32" x="428.6" y="88.11" width="18.68" height="64.42"/><path fill="#003e32" d="M455.18,120.32c0-19.45,13.91-33.5,33.5-33.5,15.72,0,28.86,9.02,31.82,24.35l-19.2,1.93c-.9-7.09-6.18-11.59-12.63-11.59-8.63,0-14.17,7.6-14.17,18.81s5.54,18.81,14.17,18.81c6.31,0,11.72-4.51,12.63-11.98l19.2,1.93c-3.35,15.85-16.49,24.74-31.82,24.74-19.45,0-33.5-14.04-33.5-33.5Z"/><path fill="#003e32" d="M289.72,67.02c-.21,1.46-.38,15.4-.5,31.62l-.8-1.1c-4.12-6.57-11.47-10.56-20.74-10.56-16.62,0-28.21,14.3-28.21,33.24s11.59,33.24,28.21,33.24c9.53,0,17.14-4.38,21.13-11.21l.16-.09c-.03,6.33-.04,10.37-.04,10.37h18.6s.37-81.88,1.05-85.5h-18.85ZM273.6,139.02c-9.28,0-15.07-8.12-15.07-18.81s5.8-18.81,15.07-18.81,15.2,8.12,15.2,18.81-5.8,18.81-15.2,18.81Z"/><polygon fill="#003e32" points="565.72 118.25 590.97 88.11 567.39 88.11 547.29 113.87 547.29 67.02 529 67.02 529 152.65 547.29 152.65 547.29 123.41 569.45 152.52 593.16 152.52 565.72 118.25"/><path fill="#003e32" d="M428.38,70.26c0-5.58,4.1-9.45,9.56-9.45s9.56,3.87,9.56,9.45-4.1,9.45-9.56,9.45-9.560-3.87-9.56-9.45Z"/><path fill="#63a09a" d="M13.02,152.52H4.29v-74.28C4.29,37.31,37.6,4,78.54,4s74.24,33.31,74.24,74.24h-8.73c0-36.12-29.39-65.51-65.51-65.51S13.02,42.12,13.02,78.24v74.28Z"/><path fill="#63a09a" d="M223.32,241.83c-43.9,0-79.62-35.72-79.62-79.62h9.36c0,38.74,31.52,70.26,70.26,70.26s70.26-31.52,70.26-70.26h9.36c0,43.9-35.72,79.62-79.62,79.62Z"/><path fill="#63a09a" d="M437.9,53.05c-10.34-28.57-37.74-49.05-69.84-49.05s-62.07,22.46-71.18,53.16h9.17c8.8-25.81,33.26-44.43,62.01-44.43s51.89,17.63,61.27,42.35c2.5-1.3,5.4-2.03,8.57-2.03Z"/></svg></a>
+  <span class="navlabel">RFP Answers</span>
+</div></div>
+<div class="page" id="top">
+  <header class="hero">
+    <p class="eyebrow">Design &amp; Construction</p>
+    <h1>RFP answers from your renovation</h1>
+    <p class="herosub">The sustainability questions hotel RFPs ask, answered from FF&amp;E and OS&amp;E purchasing data and Mindclick documentation.</p>
+  </header>
+  <section id="rfp">
+    <span class="sectkick">RFP</span>
+    <h2 class="sec">RFP answers we can support</h2>
+    <p class="lede">Across the current RFPs, these questions can be answered <b>Yes</b> from Luxury Hotel's purchasing data and Mindclick documentation. Answers are drafted below, ready to drop into a response. Only confirmed "Yes" items are shown. For additional support, Mindclick offers WELLRun, an RFP-ready reporting dashboard solution.</p>
+  <div class="count"><b>13</b> answerable "Yes"</div>
+
+  <h3 class="grp">Energy &amp; Water</h3>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Are energy-efficiency systems (lighting, HVAC, DHW) in place to reduce consumption?</p>
+    <p class="atext"><b>Yes.</b> 100% of guestroom and public-space lighting fixtures are LED.</p>
+    <span class="src">Source: Purchase Orders</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Is an active water-conservation program in place (e.g. low-flow fixtures)?</p>
+    <p class="atext"><b>Yes.</b> Guestroom baths use low-flow fixtures following WaterSense/CALGreen certification standards. Products performed better than the standards:</p>
+    <ul class="atext" style="margin:0 0 10px;padding-left:18px;">
+      <li>Toilets use 20% less water</li>
+      <li>Faucets use 55% less water</li>
+      <li>Showerheads use 30% less water</li>
+    </ul>
+    <span class="src">Source: Specifications</span>
+  </div></div>
+
+  <h3 class="grp">Materials, Packaging &amp; Sourcing</h3>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Does the packaging material contain recycled content? / sustainably sourced packaging?</p>
+    <p class="atext"><b>Yes.</b></p>
+    <p class="atext" style="margin:0 0 4px;">In the guestroom renovation:</p>
+    <ul class="atext" style="margin:0 0 12px;padding-left:18px;">
+      <li>32% of spend and 39% of products by surface area used packaging with recycled content</li>
+      <li>60% of spend and 72% of products by surface area used packaging with recycled or sustainably sourced raw materials</li>
+    </ul>
+    <p class="atext" style="margin:0 0 4px;">In the public space renovation:</p>
+    <ul class="atext" style="margin:0 0 10px;padding-left:18px;">
+      <li>3% of spend and 9% of products by surface area used packaging with recycled content</li>
+      <li>32% of spend and 55% of products by surface area used recycled or sustainably sourced materials</li>
+    </ul>
+    <span class="src">Source: Mindclick</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Does the property take initiatives to reduce single-use products and packaging?</p>
+    <p class="atext"><b>Yes.</b> 65% of the products by surface area throughout the guestrooms/corridor were shipped in 100% recyclable packaging.</p>
+    <span class="src">Source: Mindclick</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Do you evaluate your supply chain based on ESG criteria?</p>
+    <p class="atext"><b>Yes.</b> FF&amp;E purchasing representing <b>75% of spend and 93% of surface area</b> in the guestrooms and public space was evaluated through the Mindclick Sustainability Assessment Program (MSAP):</p>
+    <p class="atext" style="margin:0 0 4px;">MSAP covers:</p>
+    <ul class="atext" style="margin:0 0 10px;padding-left:18px;">
+      <li>materials, toxin avoidance, manufacturing practices, fair labor &amp; human rights, packaging, circularity, contribution to hotel energy efficiency, waste reduction and water conservation, and guest health &amp; wellness</li>
+    </ul>
+    <span class="src">Source: Mindclick</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Does the property have an environmental procurement policy for its vendors?</p>
+    <p class="atext"><b>Yes.</b> Vendors are asked to have their products evaluated through the Mindclick Sustainability Assessment program (MSAP).</p>
+    <span class="src">Source: Vendor Partner Letter</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Do you have a documented record of responsible-sourcing initiatives?</p>
+    <p class="atext"><b>Yes.</b> We use Mindclick to guide our vendor selection and analyze the environmental and social impact of the products we purchase.</p>
+    <span class="src">Source: Impact Brief</span>
+  </div></div>
+
+  <h3 class="grp">Environmental Programs</h3>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Please provide your top five environmental programs actively communicated.</p>
+    <p class="atext"><b>Yes.</b> We actively measure and report on how our purchasing choices impact hotel sustainability, including:</p>
+    <ul class="atext" style="margin:0 0 10px;padding-left:18px;">
+      <li><b>Guest Health:</b> better indoor air quality and healthier, toxin-free products</li>
+      <li><b>Waste:</b> including reduced and recyclable packaging and reuse of products</li>
+      <li><b>Energy efficiency:</b> LED lighting and energy-efficient products</li>
+      <li><b>Water conservation:</b> low-flow fixtures</li>
+      <li><b>Responsible sourcing:</b> fair labor + human rights and environmentally responsible manufacturing and carbon emission reductions</li>
+    </ul>
+    <span class="src">Source: Mindclick</span>
+  </div></div>
+
+  <h3 class="grp">Guest Health</h3>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Does the property accommodate guests with chemical sensitivities and/or allergies?</p>
+    <p class="atext"><b>Yes.</b> Guestroom finishes are independently tested for low emissions and cleaner indoor air:</p>
+    <ul class="atext" style="margin:0 0 10px;padding-left:18px;">
+      <li><b>Carpet:</b> wool/nylon, third-party tested to meet LEED VOC and formaldehyde limits.</li>
+      <li><b>Carpet padding:</b> Green Label Plus certified, tested free of VOCs.</li>
+      <li><b>Wallcovering:</b> Phillip Jeffries (tested free of VOCs), Koroseal (tested by Berkeley Analytical), and Wolf-Gordon (NSF-certified).</li>
+      <li><b>Paint:</b> Sherwin-Williams, tested to meet LEED VOC limits.</li>
+      <li><b>Pillow fabric:</b> OEKO-TEX and Greenguard certified, tested free of VOCs.</li>
+      <li><b>Mattress:</b> CertiPUR certified, tested free of VOCs.</li>
+    </ul>
+    <p class="atext">In the bath, ceramic and porcelain tile and vitreous-china fixtures are inherently free of VOCs, installed with no VOC adhesives or finishes.</p>
+    <span class="src">Source: Mindclick (IAQ)</span>
+  </div></div>
+
+  <h3 class="grp">Policy, Communication &amp; Reporting</h3>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">The establishment has a sustainability policy.</p>
+    <p class="atext"><b>Yes.</b> Documented via the Mindclick Vendor Partner Letter.</p>
+    <span class="src">Source: Vendor Partner Letter</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">The establishment informs vendors of its policy and encourages the same commitments.</p>
+    <p class="atext"><b>Yes.</b> Communicated to vendors through the Mindclick Vendor Partner Letter.</p>
+    <span class="src">Source: Mindclick</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Provide a link to any publicly communicated sustainability / social-impact goals.</p>
+    <p class="atext"><b>Yes.</b> This is the link to the Luxury Hotel renovation Impact Brief, which summarizes the sustainability performance of the 2026 hotel renovation.</p>
+    <span class="src">Source: Impact Brief</span>
+  </div></div>
+  <div class="qa"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div><div>
+    <p class="qtext">Does the property measure the impact of its non-carbon environmental measures?</p>
+    <p class="atext"><b>Yes.</b> The Luxury Hotel renovation Impact Brief measures how interior furnishings, fixtures, equipment, finishes and operating supplies support environmental and social responsibility.</p>
+    <span class="src">Source: Impact Brief</span>
+  </div></div>
+
+  <div class="foot"><b>What's not shown:</b> questions which can't be answered from the current data.</div>
+  </section>
+  <div class="closer">
+    <div class="tl">Where it all just clicks.</div>
+    <div class="mk"><svg class="mclogo mclogo-foot" viewBox="0 0 626.93 246.12" role="img" aria-label="Mindclick"><title>Mindclick</title><path fill="#003e32" d="M619.54,135.74c2.07,2.07,3.1,4.56,3.1,7.49s-1.060,5.54-3.18,7.6c-2.06,1.99-4.53,2.99-7.41,2.99s-5.49-1.02-7.53-3.06c-2.04-2.04-3.06-4.55-3.06-7.53s1.1-5.67,3.3-7.72c2.07-1.92,4.5-2.870,7.28-2.87s5.42,1.03,7.49,3.1ZM612.05,134.44c-2.43,0-4.51.88-6.22,2.64-1.69,1.72-2.53,3.77-2.53,6.14s.86,4.54,2.57,6.25c1.7,1.71,3.76,2.57,6.18,2.57s4.46-.86,6.16-2.59c1.7-1.73,2.56-3.81,2.56-6.24s-.85-4.4-2.54-6.14c-1.71-1.76-3.77-2.64-6.18-2.64ZM610.49,144.96v4.15h-3.07v-11.74c.73,0,1.82,0,3.27,0,1.45,0,2.26.01,2.42.02.93.07,1.7.27,2.31.6,1.04.57,1.57,1.51,1.57,2.8,0,.99-.28,1.7-.83,2.14-.55.44-1.23.7-2.03.79.74.15,1.29.38,1.67.68.69.56,1.03,1.43,1.03,2.63v1.05c0,.12,0,.23.02.34.01.11.04.23.08.34l.1.33h-2.93c-.1-.37-.16-.91-.19-1.62s-.09-1.19-.19-1.44c-.15-.41-.44-.7-.86-.86-.23-.1-.58-.16-1.05-.19l-.68-.04h-.65ZM611.68,142.85c.72,0,1.28-.14,1.68-.43.4-.29.6-.75.6-1.39s-.32-1.09-.95-1.34c-.42-.16-1.02-.24-1.78-.24h-.75v3.41h1.19Z"/><path fill="#003e32" d="M30.08,88.11h18.04v9.92c3.61-7.21,10.43-11.21,18.68-11.21,8.89,0,15.72,4.51,18.94,12.24,4.25-7.86,11.21-12.24,20.23-12.24,6.06,0,11.34,2.19,14.94,6.18,3.61,3.99,6.06,9.79,6.06,18.55v40.97h-18.68v-37.36c0-4.77-1.03-7.86-2.7-9.53-1.68-1.93-3.86-2.71-6.7-2.71-6.96,0-11.08,5.41-11.08,14.94v34.66h-18.68v-37.36c0-4.77-.9-7.86-2.58-9.53-1.68-1.93-3.99-2.71-6.83-2.71-6.96,0-10.95,5.41-10.95,14.94v34.66h-18.68v-64.42Z"/><rect fill="#003e32" x="139.07" y="88.11" width="18.68" height="64.42"/><path fill="#003e32" d="M170.51,88.11h18.04v9.79c3.74-6.83,10.56-11.08,19.58-11.08,6.7,0,12.37,2.45,16.36,6.7,3.99,4.25,6.31,10.31,6.31,19.32v39.68h-18.68v-36.85c0-4.25-1.03-7.6-2.96-9.66-1.93-2.19-4.51-3.09-7.73-3.09-7.6,0-12.24,5.8-12.24,14.94v34.66h-18.68v-64.42Z"/><path fill="#003e32" d="M321.23,120.32c0-19.45,13.91-33.5,33.5-33.5,15.72,0,28.86,9.02,31.82,24.35l-19.2,1.93c-.9-7.09-6.18-11.59-12.63-11.59-8.63,0-14.17,7.6-14.17,18.81s5.54,18.81,14.17,18.81c6.31,0,11.72-4.51,12.63-11.98l19.2,1.93c-3.35,15.85-16.49,24.74-31.82,24.74-19.45,0-33.5-14.04-33.5-33.5Z"/><path fill="#003e32" d="M397.47,67.02h18.68v85.5h-18.68v-85.5Z"/><rect fill="#003e32" x="428.6" y="88.11" width="18.68" height="64.42"/><path fill="#003e32" d="M455.18,120.32c0-19.45,13.91-33.5,33.5-33.5,15.72,0,28.86,9.02,31.82,24.35l-19.2,1.93c-.9-7.09-6.18-11.59-12.63-11.59-8.63,0-14.17,7.6-14.17,18.81s5.54,18.81,14.17,18.81c6.31,0,11.72-4.51,12.63-11.98l19.2,1.93c-3.35,15.85-16.49,24.74-31.82,24.74-19.45,0-33.5-14.04-33.5-33.5Z"/><path fill="#003e32" d="M289.72,67.02c-.21,1.46-.38,15.4-.5,31.62l-.8-1.1c-4.12-6.57-11.47-10.56-20.74-10.56-16.62,0-28.21,14.3-28.21,33.24s11.59,33.24,28.21,33.24c9.53,0,17.14-4.38,21.13-11.21l.16-.09c-.03,6.33-.04,10.37-.04,10.37h18.6s.37-81.88,1.05-85.5h-18.85ZM273.6,139.02c-9.28,0-15.07-8.12-15.07-18.81s5.8-18.81,15.07-18.81,15.2,8.12,15.2,18.81-5.8,18.81-15.2,18.81Z"/><polygon fill="#003e32" points="565.72 118.25 590.97 88.11 567.39 88.11 547.29 113.87 547.29 67.02 529 67.02 529 152.65 547.29 152.65 547.29 123.41 569.45 152.52 593.16 152.52 565.72 118.25"/><path fill="#003e32" d="M428.38,70.26c0-5.58,4.1-9.45,9.56-9.45s9.56,3.87,9.56,9.45-4.1,9.45-9.56,9.45-9.560-3.87-9.56-9.45Z"/><path fill="#63a09a" d="M13.02,152.52H4.29v-74.28C4.29,37.31,37.6,4,78.54,4s74.24,33.31,74.24,74.24h-8.73c0-36.12-29.39-65.51-65.51-65.51S13.02,42.12,13.02,78.24v74.28Z"/><path fill="#63a09a" d="M223.32,241.83c-43.9,0-79.62-35.72-79.62-79.62h9.36c0,38.74,31.52,70.26,70.26,70.26s70.26-31.52,70.26-70.26h9.36c0,43.9-35.72,79.62-79.62,79.62Z"/><path fill="#63a09a" d="M437.9,53.05c-10.34-28.57-37.74-49.05-69.84-49.05s-62.07,22.46-71.18,53.16h9.17c8.8-25.81,33.26-44.43,62.01-44.43s51.89,17.63,61.27,42.35c2.5-1.3,5.4-2.03,8.57-2.03Z"/></svg></div>
+    <div class="stamp">© 2026 Mindclick. All rights reserved.</div>
+  </div>
+</div>
+</body></html>
