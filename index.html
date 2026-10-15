@@ -46,6 +46,9 @@
   .closer .mk{display:flex;justify-content:center;margin-top:10px;}
   .mclogo-foot{height:64px;margin:0;}
   .stamp{margin-top:14px;font-size:11.5px;color:var(--muted);letter-spacing:.02em;}
+  body{position:relative;}
+  .wm{position:absolute;inset:0;z-index:9999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22560%22%20viewBox%3D%220%200%20640%20560%22%3E%3Cg%20font-family%3D%22Plus%20Jakarta%20Sans%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22800%22%20font-size%3D%2288%22%20letter-spacing%3D%2210%22%20fill%3D%22%23003E32%22%20fill-opacity%3D%220.075%22%20text-anchor%3D%22middle%22%3E%3Ctext%20transform%3D%22translate%28160%20140%29%20rotate%28-35%29%22%3EEXAMPLE%3C/text%3E%3Ctext%20transform%3D%22translate%28480%20420%29%20rotate%28-35%29%22%3EEXAMPLE%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:repeat;background-size:640px 560px;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  @media(max-width:600px){.wm{background-size:420px 368px;}}
 </style></head>
 <body>
 <div class="nav"><div class="navin">
@@ -182,4 +185,5 @@
     <div class="stamp">© 2026 Mindclick. All rights reserved.</div>
   </div>
 </div>
+<div class="wm" aria-hidden="true"></div>
 </body></html>
